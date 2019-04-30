@@ -1,0 +1,27 @@
+
+
+
+<section class="mat-typography">
+  <div style="padding:3rem">
+
+  </div>
+    <div style="text-align:center">
+        <h1 class="mat-display-2">Which Credit Card Should You Get?</h1>
+      </div>
+      
+      <mat-card style="text-align:center">
+        
+        <h2 class="mat-title">Upload some transaction history</h2>
+      
+        <div>
+            <button mat-button>Upload</button>
+        </div>
+      </mat-card>
+      
+      <ul>
+        <li *ngFor="let card of creditCardsList.cards">
+          {{card.name}} || {{card.amount_saved}} || {{card.reward_type}}
+        </li>
+      </ul>
+</section>
+  
